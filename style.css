@@ -32,11 +32,14 @@ div.nav li {
     text-align: center;
     display: inline;
     margin-right: 10px;
+    text-decoration: none;
 }
 
 div.flex {
     display: flex;
     height: 70%;
+    flex-direction: row;
+    align-items: center;
 }
 
 div.aside {
@@ -77,6 +80,7 @@ div.head {
 div.section {
     display: flex;
     height: 80%;
+    flex-direction: row;
 }
 
 div.section1 {
