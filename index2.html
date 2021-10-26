@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section-1 {
+            display: flex;
+            align-items: center;
+            height: 260px;
+            border: 5px dotted gold;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+        }
+        
+        .start,
+        .center,
+        .end,
+        .stretch {
+            margin: 5px;
+            text-align: center;
+            width: 150px;
+        }
+        
+        .start {
+            align-self: start;
+            background-color: yellowgreen;
+            height: 130px;
+        }
+        
+        .center {
+            align-self: center;
+            background-color: green;
+            height: 130px;
+        }
+        
+        .end {
+            align-self: end;
+            background-color: blue;
+            height: 130px;
+        }
+        
+        .stretch {
+            align-self: stretch;
+            background-color: red;
+        }
+        
+        .section-2 {
+            height: 420px;
+            background: grey;
+            border: 5px dashed purple;
+            border-radius: 10px;
+            color: white;
+        }
+        
+        .section-2 .content {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .section-2-first,
+        .section-2-center,
+        .section-2-end {
+            margin: 5px;
+            text-align: center;
+            width: 150px;
+        }
+        
+        .section-2-first {
+            background-color: yellowgreen;
+        }
+        
+        .section-2-center {
+            background-color: green;
+        }
+        
+        .section-2-end {
+            background-color: blue;
+        }
+        
+        .section-2 .content-2 {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .section-2-content-2-first,
+        .section-2-content-2-center,
+        .section-2-content-2-end {
+            margin: 5px;
+            text-align: center;
+            width: 150px;
+        }
+        
+        .section-2-content-2-first {
+            background-color: yellowgreen;
+        }
+        
+        .section-2-content-2-center {
+            background-color: green;
+        }
+        
+        .section-2-content-2-end {
+            background-color: blue;
+        }
+        
+        .section-2 .content-3 {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .section-2-content-3-first,
+        .section-2-content-3-center,
+        .section-2-content-3-end {
+            margin: 5px;
+            text-align: center;
+            width: 150px;
+        }
+        
+        .section-2-content-3-first {
+            background-color: yellowgreen;
+        }
+        
+        .section-2-content-3-center {
+            background-color: green;
+        }
+        
+        .section-2-content-3-end {
+            background-color: blue;
+            ;
+        }
+        
+        .section-2 .content-4 {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .section-2-content-4-first,
+        .section-2-content-4-center,
+        .section-2-content-4-end {
+            margin: 5px;
+            text-align: center;
+            width: 99%;
+        }
+        
+        .section-2-content-4-first {
+            background-color: yellowgreen;
+        }
+        
+        .section-2-content-4-center {
+            background-color: green;
+        }
+        
+        .section-2-content-4-end {
+            background-color: blue;
+        }
+        
+        .content-5 {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .section-2-content-5-first,
+        .section-2-content-5-center,
+        .section-2-content-5-end {
+            margin: 5px;
+            text-align: center;
+            width: 33%;
+        }
+        
+        .section-2-content-5-first {
+            background-color: yellowgreen;
+        }
+        
+        .section-2-content-5-center {
+            background-color: green;
+        }
+        
+        .section-2-content-5-end {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-1">
+        <div class="start">
+            <p>item #1</p>
+        </div>
+        <div class="center">
+            <p>item #2</p>
+        </div>
+        <div class="end">
+            <p>item #3</p>
+        </div>
+        <div class="stretch">
+            <p>item #4</p>
+        </div>
+        <div class="end">
+            <p>item #5</p>
+        </div>
+        <div class="center">
+            <p>item #6</p>
+        </div>
+        <div class="start">
+            <p>item #7</p>
+        </div>
+        <div class="stretch">
+            <p>item #8</p>
+        </div>
+        <div class="start">
+            <p>item #9</p>
+        </div>
+        <div class="center">
+            <p>item #10</p>
+        </div>
+        <div class="end">
+            <p>item #12</p>
+        </div>
+        <div class="stretch">
+            <p>item #13</p>
+        </div>
+        <div class="end">
+            <p>item #14</p>
+        </div>
+        <div class="center">
+            <p>item #15</p>
+        </div>
+        <div class="start">
+            <p>item #16</p>
+        </div>
+        <div class="stretch">
+            <p>item #17</p>
+        </div>
+        <div class="start">
+            <p>item #18</p>
+        </div>
+        <div class="center">
+            <p>item #19</p>
+        </div>
+        <div class="end">
+            <p>item #20</p>
+        </div>
+        <div class="stretch">
+            <p>item #21</p>
+        </div>
+        <div class="end">
+            <p>item #22</p>
+        </div>
+        <div class="center">
+            <p>item #23</p>
+        </div>
+        <div class="start">
+            <p>item #24</p>
+        </div>
+        <div class="stretch">
+            <p>item #25</p>
+        </div>
+        <div class="start">
+            <p>item #26</p>
+        </div>
+        <div class="center">
+            <p>item #27</p>
+        </div>
+        <div class="end">
+            <p>item #28</p>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="content">
+            <div class="section-2-first">
+                <p>item #1</p>
+            </div>
+            <div class="section-2-center">
+                <p>item #2</p>
+            </div>
+            <div class="section-2-end">
+                <p>item #3</p>
+            </div>
+        </div>
+        <div class="content-2">
+            <div class="section-2-content-2-first">
+                <p>item #1</p>
+            </div>
+            <div class="section-2-content-2-center">
+                <p>item #2</p>
+            </div>
+            <div class="section-2-content-2-end">
+                <p>item #3</p>
+            </div>
+        </div>
+        <div class="content-3">
+            <div class="section-2-content-3-first">
+                <p>item #1</p>
+            </div>
+            <div class="section-2-content-3-center">
+                <p>item #2</p>
+            </div>
+            <div class="section-2-content-3-end">
+                <p>item #3</p>
+            </div>
+        </div>
+        <div class="content-4">
+            <div class="section-2-content-4-first">
+                <p>item #1</p>
+            </div>
+            <div class="section-2-content-4-center">
+                <p>item #2</p>
+            </div>
+            <div class="section-2-content-4-end">
+                <p>item #3</p>
+            </div>
+        </div>
+        <div class="content-5">
+            <div class="section-2-content-5-first">
+                <p>item #1</p>
+            </div>
+            <div class="section-2-content-5-center">
+                <p>item #2</p>
+            </div>
+            <div class="section-2-content-5-end">
+                <p>item #3</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
